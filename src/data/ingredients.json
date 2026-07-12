@@ -1,0 +1,1793 @@
+[
+  {
+    "name": "GLYCERIN",
+    "aliases": ["glycerol", "glycerine", "1,2,3-propanetriol"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Highly effective moisture-binding ingredient; well-tolerated by all skin types including sensitive."
+  },
+  {
+    "name": "SODIUM HYALURONATE",
+    "aliases": ["hyaluronic acid", "hyaluronate", "HA"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Holds up to 1000x its weight in water; key hydration ingredient. Low-MW versions penetrate deeper."
+  },
+  {
+    "name": "NIACINAMIDE",
+    "aliases": ["nicotinamide", "vitamin B3", "niacin amide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Regulates sebum, reduces hyperpigmentation, strengthens barrier. May cause flushing at high concentrations (>10%)."
+  },
+  {
+    "name": "PANTHENOL",
+    "aliases": ["provitamin B5", "dexpanthenol", "D-panthenol"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Converts to pantothenic acid in skin; soothes, heals, and moisturizes. Excellent tolerance profile."
+  },
+  {
+    "name": "UREA",
+    "aliases": ["carbamide", "urea 40", "urea 10"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "humectant",
+    "notes": "Keratolytic at higher concentrations (>10%); humectant at low levels. Can sting on broken skin."
+  },
+  {
+    "name": "SQUALANE",
+    "aliases": ["squalene (hydrogenated)", "olive squalane"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Stable, lightweight emollient structurally similar to skin's own sebum. Excellent for all skin types."
+  },
+  {
+    "name": "SIMMONDSIA CHINENSIS SEED OIL",
+    "aliases": ["jojoba oil", "jojoba wax"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Technically a liquid wax; closely mimics sebum. Generally well-tolerated, low comedogenicity."
+  },
+  {
+    "name": "BUTYROSPERMUM PARKII BUTTER",
+    "aliases": ["shea butter", "shea"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Rich emollient with anti-inflammatory properties. Non-comedogenic despite thick texture."
+  },
+  {
+    "name": "CETYL ALCOHOL",
+    "aliases": ["cetylic alcohol", "1-hexadecanol", "palmityl alcohol"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Fatty alcohol used as emollient and texture agent; not irritating like ethyl alcohol. May clog pores slightly."
+  },
+  {
+    "name": "STEARIC ACID",
+    "aliases": ["octadecanoic acid", "stearate"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Saturated fatty acid; common in skin; used as emollient and emulsifier. Slightly comedogenic."
+  },
+  {
+    "name": "DIMETHICONE",
+    "aliases": ["polydimethylsiloxane", "PDMS", "dimethyl silicone"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "silicone",
+    "notes": "Forms a protective barrier; seals in moisture; gives slip. Non-irritating but may trap impurities."
+  },
+  {
+    "name": "CYCLOMETHICONE",
+    "aliases": ["cyclopentasiloxane", "cyclosiloxane", "D4", "D5"],
+    "safety": 3,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "silicone",
+    "notes": "Volatile silicone carrier; evaporates on skin. D4/D5 cyclics are under EU regulatory scrutiny."
+  },
+  {
+    "name": "CYCLOPENTASILOXANE",
+    "aliases": ["D5", "decamethylcyclopentasiloxane", "cyclomethicone D5"],
+    "safety": 4,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "silicone",
+    "notes": "Volatile silicone; smooth skin feel. EU restricted due to environmental persistence."
+  },
+  {
+    "name": "METHYLPARABEN",
+    "aliases": ["methyl 4-hydroxybenzoate", "E218", "nipagin"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Widely used preservative; low toxicity in current literature despite controversy. Potential sensitizer at high concentrations."
+  },
+  {
+    "name": "PROPYLPARABEN",
+    "aliases": ["propyl 4-hydroxybenzoate", "E216", "nipasol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Paraben preservative; more lipophilic than methylparaben. Restricted in EU for leave-on products near diaper area."
+  },
+  {
+    "name": "PHENOXYETHANOL",
+    "aliases": ["2-phenoxyethanol", "ethylene glycol phenyl ether", "phenoxetol"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "preservative",
+    "notes": "Common paraben alternative; broad-spectrum antimicrobial. Can irritate sensitive skin at concentrations >1%."
+  },
+  {
+    "name": "BENZALKONIUM CHLORIDE",
+    "aliases": ["BAC", "BKC", "alkyldimethylbenzylammonium chloride"],
+    "safety": 7,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "preservative",
+    "notes": "Potent antimicrobial; common sensitizer and skin barrier disruptor. Avoid in leave-on products for sensitive skin."
+  },
+  {
+    "name": "SODIUM BENZOATE",
+    "aliases": ["benzoate of soda", "E211"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Effective preservative at low pH. Generally safe; potential mild irritant in some individuals."
+  },
+  {
+    "name": "PARFUM",
+    "aliases": ["fragrance", "aroma", "perfume", "flavor"],
+    "safety": 7,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "fragrance",
+    "notes": "Catch-all term for fragrance mixtures; major cause of cosmetic contact dermatitis. Avoid for sensitive/reactive skin."
+  },
+  {
+    "name": "LIMONENE",
+    "aliases": ["d-limonene", "(R)-limonene", "citrus terpene"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "fragrance",
+    "notes": "Citrus-derived fragrance terpene; common sensitizer. Oxidized form more allergenic. EU requires labeling."
+  },
+  {
+    "name": "LINALOOL",
+    "aliases": ["linalol", "beta-linalool", "3,7-dimethyl-1,6-octadien-3-ol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "fragrance",
+    "notes": "Floral fragrance found in lavender; known sensitizer especially when oxidized. EU requires labeling."
+  },
+  {
+    "name": "CITRONELLOL",
+    "aliases": ["beta-citronellol", "3,7-dimethyloctan-1-ol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "fragrance",
+    "notes": "Rose/geranium fragrance component; moderate sensitizer. EU requires labeling at >0.001% in leave-on."
+  },
+  {
+    "name": "GERANIOL",
+    "aliases": ["geranyl alcohol", "trans-geraniol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "fragrance",
+    "notes": "Fragrance component in rose and palmarosa; sensitizer. EU requires labeling. Avoid in products for reactive skin."
+  },
+  {
+    "name": "ETHYLHEXYL METHOXYCINNAMATE",
+    "aliases": ["octinoxate", "octyl methoxycinnamate", "OMC"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "sunscreen",
+    "notes": "Chemical UVB filter; most common in sunscreens. Potential endocrine disruptor concerns; absorbs into bloodstream."
+  },
+  {
+    "name": "BUTYL METHOXYDIBENZOYLMETHANE",
+    "aliases": ["avobenzone", "parsol 1789"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "sunscreen",
+    "notes": "Broad-spectrum UVA filter; photounstable alone—requires stabilizers like octocrylene. Low irritation potential."
+  },
+  {
+    "name": "ZINC OXIDE",
+    "aliases": ["ZnO", "zinc white"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "sunscreen",
+    "notes": "Mineral broad-spectrum UV filter (UVA+UVB); non-irritating, suitable for sensitive and acne-prone skin."
+  },
+  {
+    "name": "TITANIUM DIOXIDE",
+    "aliases": ["TiO2", "CI 77891", "titanium white"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "sunscreen",
+    "notes": "Mineral UVB/short UVA filter; non-irritating. May leave white cast on deeper skin tones."
+  },
+  {
+    "name": "BENZOPHENONE-3",
+    "aliases": ["oxybenzone", "BP-3"],
+    "safety": 8,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "sunscreen",
+    "notes": "Chemical UVA/UVB filter; significant endocrine disruption evidence; banned in some reef-protection jurisdictions. Avoid."
+  },
+  {
+    "name": "RETINOL",
+    "aliases": ["vitamin A", "all-trans retinol", "retinyl alcohol"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "active",
+    "notes": "Gold-standard anti-aging active; increases cell turnover, stimulates collagen. Causes initial purging and photosensitivity."
+  },
+  {
+    "name": "RETINAL",
+    "aliases": ["retinaldehyde", "vitamin A aldehyde"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "active",
+    "notes": "One conversion step from retinoic acid; faster acting than retinol with less irritation than tretinoin."
+  },
+  {
+    "name": "TRETINOIN",
+    "aliases": ["retinoic acid", "all-trans retinoic acid", "vitamin A acid"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "active",
+    "notes": "Prescription-strength retinoid; direct form of vitamin A. Highly effective but causes dryness, peeling, photosensitivity."
+  },
+  {
+    "name": "ASCORBIC ACID",
+    "aliases": ["vitamin C", "L-ascorbic acid", "ascorbate"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Antioxidant; brightens, stimulates collagen synthesis. Unstable in formulation; low pH required for penetration."
+  },
+  {
+    "name": "ALPHA-ARBUTIN",
+    "aliases": ["alpha arbutin", "4-hydroxyphenyl-alpha-D-glucopyranoside"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Tyrosinase inhibitor for hyperpigmentation; more stable and less irritating than hydroquinone. Suitable for sensitive skin."
+  },
+  {
+    "name": "KOJIC ACID",
+    "aliases": ["kojic acid dipalmitate"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Tyrosinase inhibitor for brightening; can cause contact dermatitis at >2% concentrations."
+  },
+  {
+    "name": "AZELAIC ACID",
+    "aliases": ["nonanedioic acid", "lepargylic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Anti-acne, anti-rosacea, brightening; reduces P. acnes and melanin synthesis. Excellent for sensitive/reactive skin."
+  },
+  {
+    "name": "BENZOYL PEROXIDE",
+    "aliases": ["BPO", "dibenzoyl peroxide"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "active",
+    "notes": "Bactericidal against P. acnes; effective for inflammatory acne. Causes dryness, bleaches fabric; start at 2.5%."
+  },
+  {
+    "name": "SALICYLIC ACID",
+    "aliases": ["BHA", "beta hydroxy acid", "2-hydroxybenzoic acid"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Oil-soluble BHA; exfoliates inside pores, anti-inflammatory, comedolytic. Ideal for acne-prone and oily skin."
+  },
+  {
+    "name": "GLYCOLIC ACID",
+    "aliases": ["AHA", "alpha hydroxy acid", "hydroxyacetic acid"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "active",
+    "notes": "Smallest AHA; penetrates deeply; exfoliates, brightens, stimulates collagen. Increases photosensitivity. Use SPF."
+  },
+  {
+    "name": "LACTIC ACID",
+    "aliases": ["alpha-hydroxy acid", "2-hydroxypropanoic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Milder AHA than glycolic; exfoliates and hydrates (humectant properties). Better tolerated by sensitive skin."
+  },
+  {
+    "name": "MANDELIC ACID",
+    "aliases": ["phenylglycolic acid", "alpha-hydroxyphenylacetic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Gentle AHA; antibacterial properties. Larger molecule = slower penetration = less irritation. Good for sensitive/rosacea."
+  },
+  {
+    "name": "CARBOMER",
+    "aliases": ["carbopol", "polyacrylic acid", "acrylic acid polymer"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "thickener",
+    "notes": "Synthetic polymer gelling agent; creates clear gels. Generally well-tolerated. Neutralization required for stability."
+  },
+  {
+    "name": "XANTHAN GUM",
+    "aliases": ["xanthan", "xanthan gum polysaccharide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "thickener",
+    "notes": "Natural polysaccharide thickener; fermented from corn sugar. Excellent safety profile; used in food and cosmetics."
+  },
+  {
+    "name": "CETEARYL ALCOHOL",
+    "aliases": ["cetostearyl alcohol", "cetyl/stearyl alcohol blend"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "Fatty alcohol blend used as emulsifier, thickener, emollient. Mild potential for comedogenicity."
+  },
+  {
+    "name": "PEG-100 STEARATE",
+    "aliases": ["polyethylene glycol 100 stearate", "macrogol stearate 100"],
+    "safety": 3,
+    "comedogenic": 1,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "PEG-based emulsifier; effective and mild. May contain trace ethylene oxide; concern for compromised skin."
+  },
+  {
+    "name": "COCOS NUCIFERA OIL",
+    "aliases": ["coconut oil", "coconut butter", "fractionated coconut oil"],
+    "safety": 2,
+    "comedogenic": 4,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "High in lauric acid; antimicrobial but highly comedogenic. Avoid for acne-prone skin. Comedogenic rating: 4/5."
+  },
+  {
+    "name": "OLEA EUROPAEA FRUIT OIL",
+    "aliases": ["olive oil", "virgin olive oil", "EVOO"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Rich in oleic acid; may disrupt skin barrier with prolonged use. Moderate comedogenic rating."
+  },
+  {
+    "name": "ARGANIA SPINOSA KERNEL OIL",
+    "aliases": ["argan oil", "moroccan oil"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Rich in linoleic acid and vitamin E; non-comedogenic. Good for acne-prone and dry skin."
+  },
+  {
+    "name": "ROSA CANINA FRUIT OIL",
+    "aliases": ["rosehip oil", "rosehip seed oil", "rose hip oil"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "High in linoleic acid and retinoids; beneficial for scarring and aging. Low comedogenic rating."
+  },
+  {
+    "name": "SCLEROCARYA BIRREA SEED OIL",
+    "aliases": ["marula oil"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Lightweight, fast-absorbing; high in oleic and linoleic acids. Low comedogenic, antioxidant-rich."
+  },
+  {
+    "name": "MELALEUCA ALTERNIFOLIA LEAF OIL",
+    "aliases": ["tea tree oil", "TTO", "melaleuca oil"],
+    "safety": 6,
+    "comedogenic": 1,
+    "irritation": 4,
+    "category": "active",
+    "notes": "Antimicrobial essential oil; common skin sensitizer. Oxidizes quickly. Use diluted (<5%); avoid on sensitive skin."
+  },
+  {
+    "name": "LAVANDULA ANGUSTIFOLIA OIL",
+    "aliases": ["lavender oil", "lavender essential oil"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "fragrance",
+    "notes": "Popular essential oil; contains linalool and linalyl acetate—both sensitizers. Avoid for sensitive/reactive skin."
+  },
+  {
+    "name": "ALCOHOL DENAT.",
+    "aliases": ["denatured alcohol", "SD alcohol", "alcohol denat", "ethanol (denatured)"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "solvent",
+    "notes": "Denatured ethanol; disrupts skin barrier, strips natural oils, promotes transepidermal water loss. Avoid in dry/sensitive skin."
+  },
+  {
+    "name": "SODIUM LAURYL SULFATE",
+    "aliases": ["SLS", "sodium dodecyl sulfate", "SDS"],
+    "safety": 7,
+    "comedogenic": 0,
+    "irritation": 5,
+    "category": "surfactant",
+    "notes": "Harsh anionic surfactant; significant barrier disruptor and irritant. Avoid for sensitive, dry, eczema-prone skin."
+  },
+  {
+    "name": "SODIUM LAURETH SULFATE",
+    "aliases": ["SLES", "sodium lauryl ether sulfate", "sodium laureth sulfate"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "surfactant",
+    "notes": "Milder than SLS; ethoxylated. May contain trace 1,4-dioxane. Common lathering agent; less irritating but still sensitizing."
+  },
+  {
+    "name": "THEOBROMA CACAO SEED BUTTER",
+    "aliases": ["cocoa butter", "cacao butter"],
+    "safety": 2,
+    "comedogenic": 4,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Rich, occlusive butter; highly comedogenic. Avoid for acne-prone skin. Good for dry/dehydrated skin elsewhere."
+  },
+  {
+    "name": "ISOPROPYL MYRISTATE",
+    "aliases": ["IPM", "isopropyl tetradecanoate"],
+    "safety": 3,
+    "comedogenic": 5,
+    "irritation": 2,
+    "category": "emollient",
+    "notes": "Highly comedogenic penetration enhancer. Frequently cited as causing acne mechanica. Avoid for acne-prone skin."
+  },
+  {
+    "name": "ISOPROPYL PALMITATE",
+    "aliases": ["IPP", "isopropyl hexadecanoate"],
+    "safety": 3,
+    "comedogenic": 4,
+    "irritation": 2,
+    "category": "emollient",
+    "notes": "Comedogenic emollient; lighter feel than IPM but still high clogging potential. Avoid for acne-prone skin."
+  },
+  {
+    "name": "WATER",
+    "aliases": ["aqua", "eau", "purified water", "deionized water"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "solvent",
+    "notes": "Primary solvent in most cosmetic formulations. Completely inert and safe."
+  },
+  {
+    "name": "TOCOPHEROL",
+    "aliases": ["vitamin E", "alpha-tocopherol", "d-alpha tocopherol"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "antioxidant",
+    "notes": "Antioxidant; stabilizes formulas, protects cell membranes. Mild comedogenic potential from some derivatives."
+  },
+  {
+    "name": "TOCOPHERYL ACETATE",
+    "aliases": ["vitamin E acetate", "tocopheryl acetate"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "antioxidant",
+    "notes": "Stable vitamin E ester; needs skin conversion to active form. Lower potency than free tocopherol."
+  },
+  {
+    "name": "ALLANTOIN",
+    "aliases": ["5-ureidohydantoin", "glyoxyldiureide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "soothing",
+    "notes": "Keratolytic and soothing agent; promotes cell regeneration. Excellent tolerance profile; good for sensitive/irritated skin."
+  },
+  {
+    "name": "CENTELLA ASIATICA EXTRACT",
+    "aliases": ["cica", "gotu kola", "TECA"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Anti-inflammatory; contains madecassoside, asiaticoside. Promotes wound healing, soothes irritation, strengthens barrier."
+  },
+  {
+    "name": "CERAMIDE NP",
+    "aliases": ["ceramide 3", "N-stearoyl phytosphingosine", "ceramide III"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "barrier-repair",
+    "notes": "Key barrier lipid; restores and maintains skin barrier integrity. Essential for dry/eczema-prone skin."
+  },
+  {
+    "name": "CERAMIDE AP",
+    "aliases": ["ceramide 6-II", "alpha-hydroxy acid ceramide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "barrier-repair",
+    "notes": "Ceramide variant that aids barrier repair; often combined with ceramide NP and EOP in formulations."
+  },
+  {
+    "name": "CERAMIDE EOP",
+    "aliases": ["ceramide 1", "ceramide I", "acylceramide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "barrier-repair",
+    "notes": "Long-chain ceramide critical for lamellar body structure and skin barrier function."
+  },
+  {
+    "name": "CHOLESTEROL",
+    "aliases": ["cholesteryl", "skin cholesterol"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "barrier-repair",
+    "notes": "Natural skin lipid; with ceramides and fatty acids forms the skin barrier trilayer. Excellent safety profile."
+  },
+  {
+    "name": "POLYGLUTAMIC ACID",
+    "aliases": ["PGA", "poly-gamma-glutamic acid"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Fermentation-derived humectant; holds more water than hyaluronic acid. Film-forming properties."
+  },
+  {
+    "name": "BETAINE",
+    "aliases": ["trimethylglycine", "betaine anhydrous"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Amino acid derivative; hydrating, soothing osmoprotectant. Excellent tolerability."
+  },
+  {
+    "name": "NEOPENTYL GLYCOL DIHEPTANOATE",
+    "aliases": ["skin conditioning ester"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Lightweight emollient ester; dry skin feel, minimal comedogenicity."
+  },
+  {
+    "name": "PROPYLENE GLYCOL",
+    "aliases": ["PG", "1,2-propanediol", "propane-1,2-diol"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "humectant",
+    "notes": "Effective humectant and solvent; can cause contact dermatitis in sensitive individuals at higher concentrations."
+  },
+  {
+    "name": "BUTYLENE GLYCOL",
+    "aliases": ["1,3-butanediol", "1,3-butylene glycol", "BG"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "humectant",
+    "notes": "Milder than propylene glycol; good solvent and humectant. Excellent safety profile."
+  },
+  {
+    "name": "PENTYLENE GLYCOL",
+    "aliases": ["1,2-pentanediol", "pentanediol"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "humectant",
+    "notes": "Multifunctional; humectant, solvent, and mild preservative booster. Good tolerability."
+  },
+  {
+    "name": "SODIUM PCA",
+    "aliases": ["sodium pyroglutamate", "NaPCA"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Natural moisturizing factor (NMF) component; excellent skin-identical humectant."
+  },
+  {
+    "name": "INOSITOL",
+    "aliases": ["cyclohexanehexol", "myo-inositol"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "B-vitamin family; barrier-supporting, soothing. Often used in sensitive skin formulations."
+  },
+  {
+    "name": "ASCORBYL GLUCOSIDE",
+    "aliases": ["AA2G", "vitamin C glucoside"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Stable vitamin C derivative; enzymatically cleaved to ascorbic acid in skin. Gentler than pure L-AA."
+  },
+  {
+    "name": "SODIUM ASCORBYL PHOSPHATE",
+    "aliases": ["SAP", "vitamin C phosphate"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Stable, water-soluble vitamin C derivative; antimicrobial properties; well-tolerated antioxidant."
+  },
+  {
+    "name": "MAGNESIUM ASCORBYL PHOSPHATE",
+    "aliases": ["MAP", "vitamin C magnesium"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Stable vitamin C derivative; brightening and antioxidant. Good for sensitive skin."
+  },
+  {
+    "name": "RESVERATROL",
+    "aliases": ["trans-resveratrol", "3,5,4-trihydroxystilbene"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "antioxidant",
+    "notes": "Polyphenol antioxidant; anti-aging, anti-inflammatory. Often paired with ferulic acid."
+  },
+  {
+    "name": "FERULIC ACID",
+    "aliases": ["hydroxymethoxycinnamic acid", "4-hydroxy-3-methoxycinnamic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "antioxidant",
+    "notes": "Plant antioxidant; stabilizes vitamin C formulas, extends photo-protection. Used at 0.5% with C+E."
+  },
+  {
+    "name": "COENZYME Q10",
+    "aliases": ["ubiquinone", "CoQ10"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "antioxidant",
+    "notes": "Cellular energy carrier and antioxidant; anti-aging. Reduces fine lines in studies. Excellent safety."
+  },
+  {
+    "name": "BAKUCHIOL",
+    "aliases": ["meroterpene", "babchi"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Plant-derived retinol alternative; reduces wrinkles with less irritation. Suitable for sensitive skin."
+  },
+  {
+    "name": "TRANEXAMIC ACID",
+    "aliases": ["TXA", "trans-4-(aminomethyl)cyclohexanecarboxylic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Tyrosinase inhibitor; treats hyperpigmentation and melasma. Good tolerability, safe for sensitive skin."
+  },
+  {
+    "name": "PHYTIC ACID",
+    "aliases": ["inositol hexaphosphoric acid", "IP6"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Natural chelating agent; mild AHA alternative, antioxidant. Brightening properties."
+  },
+  {
+    "name": "RETINYL PALMITATE",
+    "aliases": ["vitamin A palmitate", "retinol palmitate"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Esterified retinol; weak retinoid activity, more stable. Requires multiple conversions to become active."
+  },
+  {
+    "name": "RETINYL PROPIONATE",
+    "aliases": ["vitamin A propionate"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Retinol ester; better tolerated than retinol, with efficacy between retinyl palmitate and retinol."
+  },
+  {
+    "name": "SULFUR",
+    "aliases": ["elemental sulfur", "precipitated sulfur", "colloidal sulfur"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Keratolytic and antimicrobial; effective for acne, seborrheic dermatitis, rosacea. Can cause dryness and odor."
+  },
+  {
+    "name": "ZINC PCA",
+    "aliases": ["zinc L-pyrrolidone carboxylic acid"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Sebum-regulating active; antibacterial. Good for oily and acne-prone skin."
+  },
+  {
+    "name": "COPPER PEPTIDE",
+    "aliases": ["GHK-Cu", "copper tripeptide-1"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Collagen and elastin stimulator; wound healing, anti-aging. Caution when combined with strong antioxidants or retinoids."
+  },
+  {
+    "name": "ARGIRELINE",
+    "aliases": ["acetyl hexapeptide-3", "acetyl hexapeptide-8"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Peptide that inhibits neuromuscular transmission mildly; marketed as botox-like for expression lines."
+  },
+  {
+    "name": "MATRIXYL",
+    "aliases": ["palmitoyl pentapeptide-4", "palmitoyl pentapeptide-3"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Collagen-stimulating peptide; reduces wrinkle depth. Strong evidence base. Well-tolerated."
+  },
+  {
+    "name": "PALMITOYL TRIPEPTIDE-1",
+    "aliases": ["matrixyl 3000 (partial)", "pal-GHK"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Collagen-stimulating signal peptide; anti-aging. Often combined with palmitoyl tetrapeptide-7."
+  },
+  {
+    "name": "EPIDERMAL GROWTH FACTOR",
+    "aliases": ["EGF", "rhEGF", "human oligopeptide-1"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Protein that stimulates cell proliferation; anti-aging, wound healing. Controversial for healthy skin use."
+  },
+  {
+    "name": "ADENOSINE",
+    "aliases": ["adenine riboside"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Purine nucleoside; anti-aging, smoothing fine lines. Excellent safety profile, used in Korean formulations."
+  },
+  {
+    "name": "SODIUM HYALURONATE CROSSPOLYMER",
+    "aliases": ["crosslinked hyaluronic acid", "HA crosspolymer"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "humectant",
+    "notes": "Crosslinked HA that stays on skin surface longer; extended hydration vs. standard HA."
+  },
+  {
+    "name": "HYDROXYETHYLCELLULOSE",
+    "aliases": ["HEC", "cellulose ether"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "thickener",
+    "notes": "Plant-derived cellulose thickener; forms clear gels. Excellent safety profile."
+  },
+  {
+    "name": "HYDROXYPROPYL METHYLCELLULOSE",
+    "aliases": ["HPMC", "hypromellose"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "thickener",
+    "notes": "Cellulose-derived thickener/film former. Very low irritation potential."
+  },
+  {
+    "name": "CARRAGEENAN",
+    "aliases": ["irish moss extract", "chondrus crispus"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "thickener",
+    "notes": "Seaweed-derived thickener; some debate about degraded forms. Topical use considered safe."
+  },
+  {
+    "name": "SODIUM CARBOXYMETHYL CELLULOSE",
+    "aliases": ["CMC", "cellulose gum", "sodium CMC"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "thickener",
+    "notes": "Cellulose derivative thickener; widely used, excellent safety."
+  },
+  {
+    "name": "POLYQUATERNIUM-10",
+    "aliases": ["PQ-10", "quaternized cellulose"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "conditioning",
+    "notes": "Cationic polymer conditioner; used in hair and skin products for slip and moisture retention."
+  },
+  {
+    "name": "CETRIMONIUM CHLORIDE",
+    "aliases": ["CTAC", "cetyltrimethylammonium chloride"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "conditioning",
+    "notes": "Cationic surfactant/preservative; antimicrobial and conditioning. Can irritate skin at concentrations >0.1%."
+  },
+  {
+    "name": "DISODIUM EDTA",
+    "aliases": ["EDTA", "edetate disodium", "disodium ethylenediaminetetraacetic acid"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "chelating agent",
+    "notes": "Chelating agent that enhances preservative efficacy; penetration-enhancing properties at higher levels."
+  },
+  {
+    "name": "TETRASODIUM EDTA",
+    "aliases": ["tetrasodium edetate"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "chelating agent",
+    "notes": "Stronger chelator than disodium EDTA; used to stabilize formulas and boost preservatives."
+  },
+  {
+    "name": "BHT",
+    "aliases": ["butylated hydroxytoluene", "2,6-di-tert-butyl-p-cresol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "antioxidant",
+    "notes": "Synthetic antioxidant/preservative; moderate endocrine concern; potential sensitizer at higher concentrations."
+  },
+  {
+    "name": "ETHYLHEXYLGLYCERIN",
+    "aliases": ["octylglycerin", "3-(2-ethylhexyloxy)-1,2-propanediol"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Preservative enhancer and skin conditioning agent; often paired with phenoxyethanol. Good tolerability."
+  },
+  {
+    "name": "CAPRYLYL GLYCOL",
+    "aliases": ["1,2-octanediol", "octylene glycol"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Multifunctional preservative and humectant; antimicrobial activity, moisturizing. Well-tolerated."
+  },
+  {
+    "name": "CHLORPHENESIN",
+    "aliases": ["3-(4-chlorophenoxy)-1,2-propanediol"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "preservative",
+    "notes": "Preservative active against gram-positive bacteria and fungi; moderate sensitizer potential."
+  },
+  {
+    "name": "DEHYDROACETIC ACID",
+    "aliases": ["DHA preservative", "3-acetyl-6-methyl-2H-pyran-2,4(3H)-dione"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Broad-spectrum preservative; often used with benzyl alcohol. Generally considered safe."
+  },
+  {
+    "name": "BENZYL ALCOHOL",
+    "aliases": ["phenylmethanol", "alpha-hydroxytoluene"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "preservative",
+    "notes": "Used as preservative, solvent, and fragrance. Can cause contact urticaria; EU fragrance allergen."
+  },
+  {
+    "name": "POTASSIUM SORBATE",
+    "aliases": ["sorbate", "E202"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "preservative",
+    "notes": "Fungistatic preservative; generally considered safe and mild. Less effective alone, synergistic with other preservatives."
+  },
+  {
+    "name": "CITRIC ACID",
+    "aliases": ["2-hydroxypropane-1,2,3-tricarboxylic acid", "E330"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "pH adjuster",
+    "notes": "pH adjuster and mild AHA; buffering agent. At low concentrations, well-tolerated; higher concentrations can irritate."
+  },
+  {
+    "name": "SODIUM HYDROXIDE",
+    "aliases": ["lye", "NaOH", "caustic soda"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "pH adjuster",
+    "notes": "Strong base used to adjust product pH to skin-compatible levels. Neutralized in formula; used in trace amounts."
+  },
+  {
+    "name": "TRIETHANOLAMINE",
+    "aliases": ["TEA", "trolamine"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "pH adjuster",
+    "notes": "pH adjuster and emulsifier; potential sensitizer with prolonged use; potential for nitrosamine formation."
+  },
+  {
+    "name": "POLYSORBATE 20",
+    "aliases": ["PS-20", "tween 20", "polyoxyethylene sorbitan monolaurate"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "Non-ionic surfactant/emulsifier; very mild. Potential for trace ethylene oxide contamination."
+  },
+  {
+    "name": "POLYSORBATE 80",
+    "aliases": ["PS-80", "tween 80", "polyoxyethylene sorbitan monooleate"],
+    "safety": 3,
+    "comedogenic": 1,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "Non-ionic surfactant/emulsifier; mildly comedogenic. Common solubilizer for fragrance."
+  },
+  {
+    "name": "GLYCERYL STEARATE",
+    "aliases": ["glycerol monostearate", "GMS"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "Non-ionic emulsifier/emollient; naturally occurring glycerol ester. Good tolerability."
+  },
+  {
+    "name": "STEARYL ALCOHOL",
+    "aliases": ["1-octadecanol", "octadecyl alcohol"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Fatty alcohol; emollient, emulsifier, thickener. Low irritation, mild comedogenic potential."
+  },
+  {
+    "name": "ISOSTEARIC ACID",
+    "aliases": ["isostearate"],
+    "safety": 3,
+    "comedogenic": 3,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Branched-chain fatty acid emollient; moderately comedogenic."
+  },
+  {
+    "name": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "aliases": ["fractionated coconut oil", "MCT oil", "coco-caprylate/caprate"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Fractionated coconut oil; lightweight, skin-identical lipid. Excellent safety; minimal comedogenicity."
+  },
+  {
+    "name": "COCO-CAPRYLATE",
+    "aliases": ["coco caprylate/caprate", "caprylic/capric coconut ester"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Lightweight emollient ester; silicone-like skin feel without cyclosiloxane concerns."
+  },
+  {
+    "name": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "aliases": ["green tea extract", "EGCG", "epigallocatechin gallate"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "antioxidant",
+    "notes": "Potent antioxidant; anti-inflammatory, photoprotective. Stabilizes vitamin C, soothes UV damage."
+  },
+  {
+    "name": "VITIS VINIFERA SEED EXTRACT",
+    "aliases": ["grape seed extract", "OPC", "oligomeric proanthocyanidins"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "antioxidant",
+    "notes": "Strong polyphenol antioxidant; anti-inflammatory, anti-aging. Excellent safety."
+  },
+  {
+    "name": "CURCUMIN",
+    "aliases": ["turmeric extract", "CI 75300", "diferuloylmethane"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "antioxidant",
+    "notes": "Anti-inflammatory; brightening; poor skin penetration without delivery systems."
+  },
+  {
+    "name": "NEEM OIL",
+    "aliases": ["azadirachta indica seed oil"],
+    "safety": 3,
+    "comedogenic": 1,
+    "irritation": 2,
+    "category": "active",
+    "notes": "Antimicrobial, anti-inflammatory; strong odor. Can irritate sensitive skin. Potent acne-fighting properties."
+  },
+  {
+    "name": "EVENING PRIMROSE OIL",
+    "aliases": ["oenothera biennis oil", "EPO"],
+    "safety": 1,
+    "comedogenic": 2,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "High in GLA (gamma-linolenic acid); anti-inflammatory, good for eczema. Moderate comedogenicity."
+  },
+  {
+    "name": "SEA BUCKTHORN OIL",
+    "aliases": ["hippophae rhamnoides oil"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Bright orange oil; extremely high in carotenoids and vitamin C. Potent but can stain skin/formulas orange."
+  },
+  {
+    "name": "HEMP SEED OIL",
+    "aliases": ["cannabis sativa seed oil", "hempseed oil"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Excellent linoleic/linolenic acid balance; non-comedogenic, anti-inflammatory. Good for acne-prone skin."
+  },
+  {
+    "name": "SUNFLOWER SEED OIL",
+    "aliases": ["helianthus annuus seed oil", "sunflower oil"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "High linoleic acid; non-comedogenic, barrier-supporting. Good emollient for sensitive/dry skin."
+  },
+  {
+    "name": "SAFFLOWER SEED OIL",
+    "aliases": ["carthamus tinctorius seed oil"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Very high linoleic acid (>75%); non-comedogenic. Often used in acne-prone skin formulations."
+  },
+  {
+    "name": "SWEET ALMOND OIL",
+    "aliases": ["prunus amygdalus dulcis oil", "prunus dulcis oil"],
+    "safety": 1,
+    "comedogenic": 2,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Mild emollient; balanced oleic/linoleic acids. Moderate comedogenicity; avoid for acne-prone skin."
+  },
+  {
+    "name": "AVOCADO OIL",
+    "aliases": ["persea gratissima oil", "avocado butter"],
+    "safety": 2,
+    "comedogenic": 3,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Rich in oleic acid and vitamins A, D, E; moderately comedogenic. Better for dry/mature skin."
+  },
+  {
+    "name": "GRAPESEED OIL",
+    "aliases": ["vitis vinifera seed oil", "grape seed oil"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Lightweight, high in linoleic acid; low comedogenicity; suitable for oily skin."
+  },
+  {
+    "name": "CASTOR OIL",
+    "aliases": ["ricinus communis seed oil"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Thick, occlusive; used in lip products and hair. Ricinoleic acid has anti-inflammatory properties."
+  },
+  {
+    "name": "CAMELLIA OIL",
+    "aliases": ["camellia japonica seed oil", "tsubaki oil"],
+    "safety": 1,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "High oleic acid; similar to sebum; skin-compatible. Light texture; traditional Japanese skincare ingredient."
+  },
+  {
+    "name": "SEA KELP EXTRACT",
+    "aliases": ["seaweed extract", "macrocystis pyrifera extract", "kelp"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Rich in minerals, vitamins; antioxidant, soothing. Hydrating and firming properties."
+  },
+  {
+    "name": "SODIUM CHLORIDE",
+    "aliases": ["salt", "table salt", "NaCl"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "viscosity modifier",
+    "notes": "Thickening agent in shampoos; can be drying and irritating at high concentrations."
+  },
+  {
+    "name": "SILICA",
+    "aliases": ["silicon dioxide", "SiO2", "fumed silica"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "texture agent",
+    "notes": "Oil-absorbing powder; mattifying effect; used in sunscreens and primers."
+  },
+  {
+    "name": "MICA",
+    "aliases": ["CI 77019", "potassium aluminum silicate"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "colorant",
+    "notes": "Natural mineral; provides shimmer and luminosity in cosmetics. Inert and safe."
+  },
+  {
+    "name": "IRON OXIDE",
+    "aliases": ["CI 77491", "CI 77492", "CI 77499", "ferric oxide"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "colorant",
+    "notes": "Natural mineral pigment; used for color in foundations, tinted products. Excellent safety profile."
+  },
+  {
+    "name": "KAOLIN",
+    "aliases": ["china clay", "aluminum silicate clay"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "absorbent",
+    "notes": "Naturally occurring clay; absorbs sebum, mattifies. Used in masks and dry formulas."
+  },
+  {
+    "name": "BENTONITE",
+    "aliases": ["aluminum montmorillonite", "bentonite clay"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "absorbent",
+    "notes": "Swelling clay used in masks; deep cleansing, pore-clearing. Overuse can dry skin."
+  },
+  {
+    "name": "POLYETHYLENE",
+    "aliases": ["PE", "polyethylene wax", "microbeads"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "texture agent",
+    "notes": "Synthetic wax; formerly used as microbeads (now banned in many countries for environmental reasons)."
+  },
+  {
+    "name": "STEARETH-2",
+    "aliases": ["PEG-2 stearate"],
+    "safety": 3,
+    "comedogenic": 3,
+    "irritation": 2,
+    "category": "emulsifier",
+    "notes": "PEG-based emulsifier; moderately comedogenic. Used in creams and lotions."
+  },
+  {
+    "name": "STEARETH-20",
+    "aliases": ["PEG-20 stearate"],
+    "safety": 3,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "PEG-based emulsifier; milder comedogenic profile than steareth-2."
+  },
+  {
+    "name": "COCAMIDOPROPYL BETAINE",
+    "aliases": ["CAPB", "cocamidopropyl dimethyl glycine"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "surfactant",
+    "notes": "Mild amphoteric surfactant; used in shampoos and cleansers. Can cause contact sensitization."
+  },
+  {
+    "name": "COCAMIDE MEA",
+    "aliases": ["cocamide monoethanolamide"],
+    "safety": 5,
+    "comedogenic": 2,
+    "irritation": 2,
+    "category": "surfactant",
+    "notes": "Fatty acid monoethanolamide; thickener and foam booster. Mild but moderately comedogenic."
+  },
+  {
+    "name": "LAURYL GLUCOSIDE",
+    "aliases": ["decyl glucoside (variant)", "alkyl polyglucoside"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "surfactant",
+    "notes": "Mild non-ionic surfactant; plant-derived; gentle on skin and eyes."
+  },
+  {
+    "name": "DECYL GLUCOSIDE",
+    "aliases": ["APG C10", "alkyl glucoside"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "surfactant",
+    "notes": "Very mild surfactant; biodegradable, derived from sugar and fatty alcohols. Good for sensitive skin."
+  },
+  {
+    "name": "METHYL GLUCOSE SESQUISTEARATE",
+    "aliases": ["glucamate SSE-20"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 1,
+    "category": "emulsifier",
+    "notes": "Non-ionic emulsifier derived from glucose; good moisturizing properties."
+  },
+  {
+    "name": "BEHENYL ALCOHOL",
+    "aliases": ["1-docosanol", "docosanol"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Long-chain fatty alcohol; thickener and emollient. Antiviral properties against herpes (OTC)."
+  },
+  {
+    "name": "MYRISTYL ALCOHOL",
+    "aliases": ["1-tetradecanol"],
+    "safety": 2,
+    "comedogenic": 3,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Fatty alcohol; moderately comedogenic. Used as thickener and emollient."
+  },
+  {
+    "name": "LAURIC ACID",
+    "aliases": ["dodecanoic acid", "C12:0"],
+    "safety": 3,
+    "comedogenic": 4,
+    "irritation": 2,
+    "category": "emollient",
+    "notes": "Saturated fatty acid from coconut oil; antibacterial but highly comedogenic. Drives coconut oil's pore-clogging."
+  },
+  {
+    "name": "MYRISTIC ACID",
+    "aliases": ["tetradecanoic acid", "C14:0"],
+    "safety": 3,
+    "comedogenic": 3,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Saturated fatty acid; moderately comedogenic. Used as emollient and cleansing agent."
+  },
+  {
+    "name": "PALMITIC ACID",
+    "aliases": ["hexadecanoic acid", "C16:0"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Major skin-identical fatty acid; moisturizing. Mild comedogenicity."
+  },
+  {
+    "name": "OLEIC ACID",
+    "aliases": ["octadecenoic acid", "C18:1"],
+    "safety": 2,
+    "comedogenic": 2,
+    "irritation": 1,
+    "category": "emollient",
+    "notes": "Monounsaturated fatty acid; promotes penetration but can disrupt barrier in excess. Moderate comedogenicity."
+  },
+  {
+    "name": "LINOLEIC ACID",
+    "aliases": ["octadecadienoic acid", "C18:2"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Essential fatty acid; deficiency linked to acne. Anti-inflammatory, barrier-supporting, non-comedogenic."
+  },
+  {
+    "name": "POLYGLYCERYL-3 BEESWAX",
+    "aliases": ["polyglyceryl beeswax", "modified beeswax"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Modified beeswax derivative; water-in-oil emulsifier with good skin tolerance."
+  },
+  {
+    "name": "CERA ALBA",
+    "aliases": ["beeswax", "white beeswax", "bleached beeswax"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Natural wax from honeybees; occlusive, emollient, emulsifying. Low comedogenicity despite thick texture."
+  },
+  {
+    "name": "CARNAUBA WAX",
+    "aliases": ["copernicia cerifera wax", "brazil wax"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "texture agent",
+    "notes": "Hard plant wax; used in lip products, mascaras, and sunscreens. Excellent safety."
+  },
+  {
+    "name": "MINERAL OIL",
+    "aliases": ["paraffinum liquidum", "liquid paraffin", "baby oil"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Highly refined petroleum derivative; occlusive, non-comedogenic when highly refined. Long historical safety data."
+  },
+  {
+    "name": "PETROLATUM",
+    "aliases": ["petroleum jelly", "vaseline", "white petrolatum"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Most effective occlusive ingredient; seals in moisture, prevents TEWL. Non-comedogenic; excellent for dry/eczema skin."
+  },
+  {
+    "name": "LANOLIN",
+    "aliases": ["wool wax", "wool grease", "adeps lanae"],
+    "safety": 3,
+    "comedogenic": 1,
+    "irritation": 2,
+    "category": "emollient",
+    "notes": "Highly effective emollient from sheep wool; potential allergen in lanolin-sensitive individuals."
+  },
+  {
+    "name": "TRIETHYL CITRATE",
+    "aliases": ["TEC", "ethyl citrate"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "plasticizer",
+    "notes": "Plasticizer used in nail polish and hair products; deodorant properties."
+  },
+  {
+    "name": "ISODECYL NEOPENTANOATE",
+    "aliases": ["skin conditioning ester"],
+    "safety": 2,
+    "comedogenic": 1,
+    "irritation": 0,
+    "category": "emollient",
+    "notes": "Lightweight ester emollient; non-greasy; used in skin and hair products."
+  },
+  {
+    "name": "HELIANTHUS ANNUUS SEED WAX",
+    "aliases": ["sunflower seed wax"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "texture agent",
+    "notes": "Plant-derived wax; structuring agent in anhydrous formulas. Very mild."
+  },
+  {
+    "name": "LECITHIN",
+    "aliases": ["phosphatidylcholine", "soy lecithin", "sunflower lecithin"],
+    "safety": 1,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "emulsifier",
+    "notes": "Skin-identical phospholipid; barrier-repairing, penetration-enhancing. Excellent tolerance."
+  },
+  {
+    "name": "SODIUM LAUROYL SARCOSINATE",
+    "aliases": ["sarcosinate", "lauroyl sarcosine sodium salt"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "surfactant",
+    "notes": "Mild anionic surfactant; gentle cleansing with good skin compatibility."
+  },
+  {
+    "name": "AMINOMETHYL PROPANOL",
+    "aliases": ["AMP", "2-amino-2-methylpropanol"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "pH adjuster",
+    "notes": "pH adjuster; can form nitrosamines in certain formulations. Moderate irritation potential."
+  },
+  {
+    "name": "DIPROPYLENE GLYCOL",
+    "aliases": ["DPG", "dipropyleneglycol"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "solvent",
+    "notes": "Solvent; mild humectant properties. Used in fragrance dilution. Low irritation."
+  },
+  {
+    "name": "HEXYLENE GLYCOL",
+    "aliases": ["2-methyl-2,4-pentanediol"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "solvent",
+    "notes": "Solvent and humectant; moderate irritant at higher concentrations. Less favorable safety profile than BG or PG."
+  },
+  {
+    "name": "DIAZOLIDINYL UREA",
+    "aliases": ["Germall II"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "preservative",
+    "notes": "Formaldehyde-releasing preservative; broad spectrum. Formaldehyde releasers are common sensitizers—avoid for reactive skin."
+  },
+  {
+    "name": "IMIDAZOLIDINYL UREA",
+    "aliases": ["Germall 115"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "preservative",
+    "notes": "Formaldehyde-releasing preservative; common sensitizer. Seek alternatives for sensitive skin products."
+  },
+  {
+    "name": "DMDM HYDANTOIN",
+    "aliases": ["1,3-dimethylol-5,5-dimethylhydantoin"],
+    "safety": 7,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "preservative",
+    "notes": "Formaldehyde-releasing preservative; significant sensitization risk. Should be avoided where possible."
+  },
+  {
+    "name": "QUATERNIUM-15",
+    "aliases": ["Dowicil 200"],
+    "safety": 8,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "preservative",
+    "notes": "High-releasing formaldehyde donor; most common cause of formaldehyde-related contact dermatitis. Avoid."
+  },
+  {
+    "name": "BRONOPOL",
+    "aliases": ["2-bromo-2-nitropropane-1,3-diol", "BNPD"],
+    "safety": 7,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "preservative",
+    "notes": "Broad-spectrum preservative; formaldehyde releaser; can form nitrosamines. Avoid for sensitive formulations."
+  },
+  {
+    "name": "IODOPROPYNYL BUTYLCARBAMATE",
+    "aliases": ["IPBC"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "preservative",
+    "notes": "Potent antifungal preservative; potential sensitizer; restricted in EU for rinse-off products."
+  },
+  {
+    "name": "POLYACRYLAMIDE",
+    "aliases": ["polymer acrylamide", "acrylamide polymer"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "thickener",
+    "notes": "Film-forming polymer; acrylamide monomer impurities are carcinogenic. Safety depends on purity/grade."
+  },
+  {
+    "name": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "aliases": ["Carbopol ETD", "acrylates crosspolymer", "pemulen"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "thickener",
+    "notes": "Gelling polymer; forms transparent gels. Better tolerability than regular carbomer."
+  },
+  {
+    "name": "AMINOPROPYL ASCORBYL PHOSPHATE",
+    "aliases": ["APPS", "ascorbyl aminopropyl phosphate"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Vitamin C derivative; cell-permeable, stable. Good antioxidant and brightening properties."
+  },
+  {
+    "name": "ETHYL ASCORBIC ACID",
+    "aliases": ["3-O-ethyl ascorbic acid", "EAA"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "active",
+    "notes": "Stable, skin-permeable vitamin C derivative; direct brightening and antioxidant activity."
+  },
+  {
+    "name": "PALMITOYL TETRAPEPTIDE-7",
+    "aliases": ["KTTKS peptide", "matrixyl 3000 (partial)"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Signal peptide; reduces excess cytokine production (anti-inflammatory); anti-aging. Part of matrixyl 3000 complex."
+  },
+  {
+    "name": "ACETYL OCTAPEPTIDE-3",
+    "aliases": ["SNAP-8", "acetyl octapeptide"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Expression peptide; inhibits acetylcholine release mildly. Wrinkle-reducing properties."
+  },
+  {
+    "name": "TRIPEPTIDE-1",
+    "aliases": ["GHK peptide", "glycyl-L-histidyl-L-lysine"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "active",
+    "notes": "Collagen-stimulating tripeptide; naturally occurring in plasma. Anti-aging, wound healing."
+  },
+  {
+    "name": "SODIUM METABISULFITE",
+    "aliases": ["disodium pyrosulfite", "sodium pyrosulfite"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "antioxidant",
+    "notes": "Reducing agent/antioxidant preservative; potential sensitizer; sulfite sensitivity in some individuals."
+  },
+  {
+    "name": "BUTYLATED HYDROXYANISOLE",
+    "aliases": ["BHA antioxidant", "butylhydroxyanisole"],
+    "safety": 6,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "antioxidant",
+    "notes": "Synthetic antioxidant; endocrine disruption concerns; potential carcinogen at high doses. EU restricted."
+  },
+  {
+    "name": "ETHANOL",
+    "aliases": ["alcohol", "grain alcohol", "ethyl alcohol"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 3,
+    "category": "solvent",
+    "notes": "Evaporative solvent; antimicrobial at >60%; skin barrier disruptor. Less damaging than alcohol denat."
+  },
+  {
+    "name": "ISOPROPYL ALCOHOL",
+    "aliases": ["IPA", "isopropanol", "rubbing alcohol"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "solvent",
+    "notes": "Stronger barrier disruptor than ethanol; drying, denaturing. Avoid in leave-on formulations for sensitive skin."
+  },
+  {
+    "name": "ACETONE",
+    "aliases": ["propanone", "dimethyl ketone"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 4,
+    "category": "solvent",
+    "notes": "Strong solvent; significant defatting and irritation. Used in nail polish removers. Not for skin products."
+  },
+  {
+    "name": "DIMETHYL ISOSORBIDE",
+    "aliases": ["DMI", "methyl isosorbide"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "solvent",
+    "notes": "Penetration-enhancing solvent; improves active ingredient delivery. Can increase other ingredients' irritation potential."
+  },
+  {
+    "name": "SODIUM COCOYL ISETHIONATE",
+    "aliases": ["SCI", "baby foam"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "surfactant",
+    "notes": "Mild anionic surfactant from coconut; gentler than SLS. Good for sensitive/dry skin cleansers."
+  },
+  {
+    "name": "BEHENTRIMONIUM CHLORIDE",
+    "aliases": ["docosyltrimethylammonium chloride", "BTAC-22"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "conditioning",
+    "notes": "Cationic surfactant; hair and skin conditioner. Milder than cetyltrimethylammonium chloride."
+  },
+  {
+    "name": "POLYSILICONE-11",
+    "aliases": ["vinyl dimethicone crosspolymer"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "silicone",
+    "notes": "Crosslinked silicone; silky skin feel without heavy residue. Non-volatile; lower environmental concern."
+  },
+  {
+    "name": "POLYMETHYLSILSESQUIOXANE",
+    "aliases": ["PMSQ", "tospearl"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 0,
+    "category": "silicone",
+    "notes": "Silicone resin powder; mattifying effect, silky texture. Used in primers and foundations."
+  },
+  {
+    "name": "AMODIMETHICONE",
+    "aliases": ["amino silicone", "aminopropyl-modified dimethicone"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "silicone",
+    "notes": "Amino-functionalized silicone; substantive to negatively charged hair/skin. Used in hair repair products."
+  },
+  {
+    "name": "OCTOCRYLENE",
+    "aliases": ["2-cyano-3,3-diphenyl acrylic acid ester"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 2,
+    "category": "sunscreen",
+    "notes": "Stabilizes avobenzone; UVB/UVA filter. Accumulates in coral reefs; potential endocrine effects."
+  },
+  {
+    "name": "HOMOSALATE",
+    "aliases": ["3,3,5-trimethylcyclohexyl salicylate"],
+    "safety": 5,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "sunscreen",
+    "notes": "UVB filter; potential endocrine disruptor. EU limited to 7.34%; higher concentration proposed safe."
+  },
+  {
+    "name": "ETHYLHEXYL SALICYLATE",
+    "aliases": ["octisalate", "octyl salicylate"],
+    "safety": 4,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "sunscreen",
+    "notes": "UVB filter; generally mild. Enhances penetration of other UVB filters."
+  },
+  {
+    "name": "MEXORYL SX",
+    "aliases": ["ecamsule", "terephthalylidene dicamphor sulfonic acid"],
+    "safety": 3,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "sunscreen",
+    "notes": "Short UVA filter; highly photostable. Does not penetrate skin. Considered safe; used in L'Oreal patents."
+  },
+  {
+    "name": "TINOSORB S",
+    "aliases": ["bis-ethylhexyloxyphenol methoxyphenyl triazine", "BEMT"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "sunscreen",
+    "notes": "Broad-spectrum UVA/UVB filter; photostable; does not penetrate skin. Excellent safety profile."
+  },
+  {
+    "name": "TINOSORB M",
+    "aliases": ["methylene bis-benzotriazolyl tetramethylbutylphenol", "MBBT"],
+    "safety": 2,
+    "comedogenic": 0,
+    "irritation": 1,
+    "category": "sunscreen",
+    "notes": "Broad-spectrum, photostable UV filter; physical/chemical hybrid. Does not absorb through skin. Excellent safety."
+  }
+]
