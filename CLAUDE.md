@@ -153,6 +153,11 @@ Invoke these skills when performing OKX-related operations — they contain step
 
 Use the `superpowers:subagent-driven-development` skill for all implementation work. Dispatch fresh subagents per task, track progress in a ledger, and keep the main context clean.
 
+## GitHub Merge Rule (project override)
+
+**Never squash merges.** Use `gh pr merge --merge --delete-branch` (standard merge commit).
+This overrides the AGENTS.md default of `--squash`. Full commit history must be preserved.
+
 ## Known Gotcha
 
 The bare `onchainos` CLI v4.2.0–v4.2.2 has provisioning bugs. Always run Onchain OS through an agent (Claude Code, OpenCode) — confirmed workaround.
