@@ -4,6 +4,9 @@ node_modules/
 !.env.example
 dist/
 *.db
+*.db-shm
+*.db-wal
+*.db-journal
 *.sqlite
 .DS_Store
 reference/
