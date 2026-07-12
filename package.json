@@ -13,8 +13,10 @@
     "@aws-sdk/credential-providers": "^3.1081.0",
     "@okxweb3/x402-core": "^0.1.0",
     "@okxweb3/x402-evm": "^0.2.1",
+    "@okxweb3/x402-fetch": "^0.1.0",
     "@okxweb3/x402-hono": "^0.1.1",
-    "hono": "^4.12.28"
+    "hono": "^4.12.28",
+    "viem": "^2.55.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.3",
