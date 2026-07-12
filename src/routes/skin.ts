@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { invokeClaude } from '../lib/bedrock.js';
+import { extractJson } from '../lib/parse.js';
 import type { SkinProfile } from '../types.js';
 
 interface SkinAnalysisResult extends SkinProfile {
@@ -59,20 +60,6 @@ Rules:
 - Be conservative with scores — most people are in the 20-60 range, not 80-100
 - skinType should reflect the dominant characteristic observed
 - Return ONLY valid JSON — no markdown fences, no explanation outside the JSON${descriptionBlock}`;
-}
-
-function extractJson(raw: string): string {
-  // Try to extract JSON from markdown code blocks if present
-  const fenceMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
-  if (fenceMatch) {
-    return fenceMatch[1].trim();
-  }
-  // Try to find a JSON object directly
-  const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (jsonMatch) {
-    return jsonMatch[0];
-  }
-  return raw.trim();
 }
 
 function parseClaudeResponse(raw: string): SkinAnalysisResult {

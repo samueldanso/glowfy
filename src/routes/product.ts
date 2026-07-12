@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { invokeClaude } from '../lib/bedrock.js';
+import { extractJson } from '../lib/parse.js';
 import type { IngredientListResult } from '../lib/scoring.js';
 import { scoreIngredientList } from '../lib/scoring.js';
 
@@ -160,18 +161,6 @@ Rules:
 - Be conservative — without confirmed ingredients, lean toward "caution" unless the product is very well-known
 - Clearly note in recommendation that confidence is limited without ingredient verification
 - Return ONLY valid JSON`;
-}
-
-function extractJson(raw: string): string {
-  const fenceMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
-  if (fenceMatch) {
-    return fenceMatch[1].trim();
-  }
-  const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (jsonMatch) {
-    return jsonMatch[0];
-  }
-  return raw.trim();
 }
 
 function parseMatchResponse(raw: string, productName: string): ProductMatchResult {

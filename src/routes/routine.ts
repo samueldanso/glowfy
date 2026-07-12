@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { invokeClaude } from '../lib/bedrock.js';
+import { extractJson } from '../lib/parse.js';
 import { lookupIngredient } from '../lib/scoring.js';
 
 interface RoutineBuildInput {
@@ -190,18 +191,6 @@ Return as JSON with this exact structure (no markdown, no code blocks, just raw 
 Return ONLY valid JSON.`);
 
   return sections.join('\n');
-}
-
-function extractJson(raw: string): string {
-  const fenceMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
-  if (fenceMatch) {
-    return fenceMatch[1].trim();
-  }
-  const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (jsonMatch) {
-    return jsonMatch[0];
-  }
-  return raw.trim();
 }
 
 function parseRoutineResponse(raw: string): RoutineBuildResult {
