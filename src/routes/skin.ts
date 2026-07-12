@@ -138,7 +138,12 @@ skinRoutes.get('/analyze', (c) => {
 });
 
 skinRoutes.post('/analyze', async (c) => {
-  const body = await c.req.json<{ photo_url?: string; description?: string }>();
+  let body: { photo_url?: string; description?: string };
+  try {
+    body = await c.req.json();
+  } catch {
+    return c.json({ error: 'Invalid JSON body' }, 400);
+  }
 
   const { photo_url, description } = body;
 

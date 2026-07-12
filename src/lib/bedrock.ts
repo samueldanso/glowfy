@@ -38,7 +38,9 @@ export async function invokeClaude(prompt: string, imageUrl?: string): Promise<s
 
   if (imageUrl) {
     const imgResponse = await fetch(imageUrl);
-    if (!imgResponse.ok) throw new Error(`Failed to fetch image: ${imgResponse.status} ${imgResponse.statusText}`);
+    if (!imgResponse.ok) {
+      throw new Error(`Failed to fetch image: ${imgResponse.status} ${imgResponse.statusText}`);
+    }
     const buffer = await imgResponse.arrayBuffer();
     const base64 = Buffer.from(buffer).toString('base64');
     const mediaType = imgResponse.headers.get('content-type') || 'image/jpeg';
