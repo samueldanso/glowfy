@@ -1,4 +1,5 @@
 import { OKXFacilitatorClient } from '@okxweb3/x402-core';
+import type { RoutesConfig } from '@okxweb3/x402-core/server';
 import { ExactEvmScheme } from '@okxweb3/x402-evm/exact/server';
 import { paymentMiddleware, x402ResourceServer } from '@okxweb3/x402-hono';
 import { Hono } from 'hono';
@@ -55,7 +56,7 @@ function createFacilitator() {
 const WALLET = process.env.WALLET_ADDRESS;
 if (!WALLET) throw new Error('[glowfy] WALLET_ADDRESS env var is required');
 
-const routes = {
+const routes: RoutesConfig = {
   '/skin/analyze': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
   },
