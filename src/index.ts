@@ -52,7 +52,8 @@ function createFacilitator() {
 }
 
 // x402 payment middleware — path-only keys match all HTTP methods (GET + POST)
-const WALLET = process.env.WALLET_ADDRESS ?? '';
+const WALLET = process.env.WALLET_ADDRESS;
+if (!WALLET) throw new Error('[glowfy] WALLET_ADDRESS env var is required');
 
 const routes = {
   '/skin/analyze': {
