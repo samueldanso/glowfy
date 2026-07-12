@@ -1,0 +1,25 @@
+services:
+  - type: web
+    runtime: docker
+    name: glowfy
+    region: singapore
+    plan: starter
+    envVars:
+      - key: WALLET_ADDRESS
+        sync: false
+      - key: OKX_API_KEY
+        sync: false
+      - key: OKX_SECRET_KEY
+        sync: false
+      - key: OKX_PASSPHRASE
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_REGION
+        value: us-east-1
+      - key: PORT
+        value: "3000"
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
