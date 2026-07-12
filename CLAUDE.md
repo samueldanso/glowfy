@@ -158,6 +158,17 @@ Use the `superpowers:subagent-driven-development` skill for all implementation w
 **Never squash merges.** Use `gh pr merge --merge --delete-branch` (standard merge commit).
 This overrides the AGENTS.md default of `--squash`. Full commit history must be preserved.
 
+## Competition Standard
+
+5000+ submissions, 3 winners per category. Other teams are integrating real oracles, CoinGecko APIs, production infrastructure. We are here to WIN, not participate.
+
+**Non-negotiable rules:**
+- **No faking data.** Use real data sources (Open Beauty Facts, published research). If it can't be sourced, say so — don't invent it.
+- **No "good enough for a hackathon" shortcuts.** Every piece of code ships as if it's serving 10K calls/day on day one.
+- **No stubs left in production.** Every endpoint returns real, useful output.
+- **No LLM-hallucinated data presented as fact.** The entire value proposition is "deterministic, database-backed intelligence" — if we fake it, we ARE the problem we claim to solve.
+- **Production-grade or don't ship.** Error handling, input validation, proper types, real responses. Judges evaluate quality, not quantity.
+
 ## Known Gotcha
 
 The bare `onchainos` CLI v4.2.0–v4.2.2 has provisioning bugs. Always run Onchain OS through an agent (Claude Code, OpenCode) — confirmed workaround.
