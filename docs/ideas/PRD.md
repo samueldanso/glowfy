@@ -171,30 +171,59 @@ Three packages — all required:
 ### Correct Hono integration pattern (from SDK docs)
 
 ```typescript
-import { paymentMiddlewareFromConfig } from "@okxweb3/x402-hono";
+import { Hono } from "hono";
+import { OKXFacilitatorClient } from "@okxweb3/x402-core";
+import { x402ResourceServer, x402HTTPResourceServer } from "@okxweb3/x402-core/server";
+import { paymentMiddlewareFromHTTPServer } from "@okxweb3/x402-hono";
+import { ExactEvmScheme } from "@okxweb3/x402-evm/exact/server";
 
-// One entry per protected route — SDK resolves amount from price string
+const app = new Hono();
+
+// OKX SA API credentials — REQUIRED for on-chain settlement
+const facilitatorClient = new OKXFacilitatorClient({
+  apiKey: process.env.OKX_API_KEY!,
+  secretKey: process.env.OKX_SECRET_KEY!,
+  passphrase: process.env.OKX_PASSPHRASE!,
+  syncSettle: true,  // wait for on-chain confirm before delivering response
+});
+
+// Register the ExactEvmScheme for X Layer
+const resourceServer = new x402ResourceServer(facilitatorClient)
+  .register("eip155:196", new ExactEvmScheme());
+
+// Route config — one entry per protected endpoint
 const routes = {
   "/skin/analyze":         { accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.05" } },
   "/skin/quiz":            { accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.03" } },
   "/routine/build":        { accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.05" } },
-  "/ingredients/recommend":{ accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.03" } },
+  "/ingredients/recommend":{ accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.02" } },
   "/ingredients/check":    { accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.02" } },
   "/product/match":        { accepts: { scheme: "exact", network: "eip155:196", payTo: process.env.WALLET_ADDRESS!, price: "$0.02" } },
 };
 
+const httpServer = new x402HTTPResourceServer(resourceServer, routes);
+
 // Mount BEFORE all route handlers — payment gate fires first
-app.use("/*", paymentMiddlewareFromConfig(routes));
+app.use("*", paymentMiddlewareFromHTTPServer(httpServer));
+
+// ... route handlers here ...
+
+export default { port: 3000, fetch: app.fetch };
+
+// CRITICAL: must run after server starts, before first request
+await resourceServer.initialize();
 ```
 
 The SDK:
 - Constructs the correct 402 challenge (body + `PAYMENT-REQUIRED` header)
 - Handles `extra.eip712.name` / `extra.eip712.version` for EIP-3009 internally
 - Verifies the payment signature on replay
-- Settles on-chain via OKX facilitator
+- Settles on-chain via OKX facilitator (requires SA API keys)
 - Returns 200 to the replayed request → your handler runs
 
 **`price: "$0.05"` is valid** — SDK accepts human-readable prices and converts to base units (decimals=6) automatically. Equivalent to `"50000"` in base units.
+
+**`await resourceServer.initialize()` is REQUIRED** — without it, the facilitator can't sync supported payment kinds and all 402 challenges will fail.
 
 ---
 
@@ -202,11 +231,14 @@ The SDK:
 
 ```bash
 WALLET_ADDRESS=0x<your-X-Layer-EVM-address>   # from Agentic Wallet setup
+OKX_API_KEY=...                                # OKX SA API — REQUIRED for settlement
+OKX_SECRET_KEY=...                             # OKX SA API — REQUIRED for settlement
+OKX_PASSPHRASE=...                             # OKX SA API — REQUIRED for settlement
 AWS_PROFILE=my-bedrock-profile                 # already configured
 AWS_REGION=us-east-1
 ```
 
-> `@okxweb3/x402-hono` only needs `WALLET_ADDRESS` — no OKX API keys required. The SDK handles payment verification via the OKX facilitator automatically.
+> The OKX SA API keys are required for the `OKXFacilitatorClient` which handles payment verification and on-chain settlement. These are separate from the Agentic Wallet — get them from the OKX developer portal.
 
 ---
 
