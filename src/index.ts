@@ -1,7 +1,11 @@
 import { OKXFacilitatorClient } from '@okxweb3/x402-core';
 import type { RoutesConfig } from '@okxweb3/x402-core/server';
 import { ExactEvmScheme } from '@okxweb3/x402-evm/exact/server';
-import { paymentMiddleware, x402ResourceServer } from '@okxweb3/x402-hono';
+import {
+  paymentMiddlewareFromHTTPServer,
+  x402HTTPResourceServer,
+  x402ResourceServer,
+} from '@okxweb3/x402-hono';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { ingredientRoutes } from './routes/ingredients';
@@ -103,7 +107,11 @@ const resourceServer = new x402ResourceServer(createFacilitator()).register(
   new ExactEvmScheme(),
 );
 
-app.use('/*', paymentMiddleware(routes, resourceServer));
+// Create HTTP server with extended poll deadline for AI-heavy endpoints (Bedrock takes 3-5s)
+const httpServer = new x402HTTPResourceServer(resourceServer, routes);
+httpServer.setPollDeadline(20000); // 20s — enough for Bedrock AI + on-chain confirmation
+
+app.use('/*', paymentMiddlewareFromHTTPServer(httpServer));
 
 // Mount paid route handlers
 app.route('/skin', skinRoutes);
