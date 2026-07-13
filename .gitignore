@@ -9,5 +9,7 @@ dist/
 *.db-journal
 *.sqlite
 .DS_Store
+.superpowers/
+data/
 reference/
 references/

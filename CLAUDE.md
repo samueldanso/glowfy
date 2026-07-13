@@ -51,7 +51,7 @@ These are confirmed failure modes from OKX validator — violating any one cause
 2. **PAYMENT-REQUIRED header must be present** — validator reads the header, not body. Use the SDK (don't implement x402 manually).
 3. **CORS: explicitly list headers** — `Access-Control-Allow-Headers: *` breaks x402. Must explicitly list `PAYMENT-SIGNATURE`. Must expose `PAYMENT-REQUIRED` and `PAYMENT-RESPONSE`.
 4. **Payment gate fires before param validation** — never return 400 before 402.
-5. **`await resourceServer.initialize()` must run after server starts** — without it, facilitator can't sync supported kinds and all 402 challenges fail.
+5. **`resourceServer.initialize()` is handled automatically** — the SDK's `paymentMiddlewareFromHTTPServer` sets `syncFacilitatorOnStart: true` by default, which calls `httpServer.initialize()` on first request. No manual call needed. Confirmed working via on-chain tx settlement.
 6. **OKX SA API keys are required** — `OKXFacilitatorClient` needs `apiKey`, `secretKey`, `passphrase` for on-chain settlement. These are separate from the Agentic Wallet.
 
 Validation self-check:
