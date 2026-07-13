@@ -56,24 +56,32 @@ function createFacilitator() {
 const WALLET = process.env.WALLET_ADDRESS;
 if (!WALLET) throw new Error('[glowfy] WALLET_ADDRESS env var is required');
 
+const BASE_URL = process.env.BASE_URL || 'https://glowfy.onrender.com';
+
 const routes: RoutesConfig = {
   '/skin/analyze': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
+    resource: `${BASE_URL}/skin/analyze`,
   },
   '/skin/quiz': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.03' },
+    resource: `${BASE_URL}/skin/quiz`,
   },
   '/routine/build': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
+    resource: `${BASE_URL}/routine/build`,
   },
   '/ingredients/recommend': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
+    resource: `${BASE_URL}/ingredients/recommend`,
   },
   '/ingredients/check': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
+    resource: `${BASE_URL}/ingredients/check`,
   },
   '/product/match': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
+    resource: `${BASE_URL}/product/match`,
   },
 };
 
