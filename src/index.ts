@@ -62,26 +62,39 @@ const routes: RoutesConfig = {
   '/skin/analyze': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
     resource: `${BASE_URL}/skin/analyze`,
+    description:
+      'Analyze skin from photo or text description — returns skin type + 10 concern scores',
+    mimeType: 'application/json',
   },
   '/skin/quiz': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.03' },
     resource: `${BASE_URL}/skin/quiz`,
+    description: 'Lifestyle quiz → full skin profile (no photo needed)',
+    mimeType: 'application/json',
   },
   '/routine/build': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
     resource: `${BASE_URL}/routine/build`,
+    description: 'Generate complete AM/PM skincare routine with 30-day compliance plan',
+    mimeType: 'application/json',
   },
   '/ingredients/recommend': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/ingredients/recommend`,
+    description: 'Personalized ingredient recommendations based on skin profile',
+    mimeType: 'application/json',
   },
   '/ingredients/check': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/ingredients/check`,
+    description: 'Score ingredient list for safety, comedogenicity, and irritation',
+    mimeType: 'application/json',
   },
   '/product/match': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/product/match`,
+    description: 'Score product compatibility with your skin profile',
+    mimeType: 'application/json',
   },
 };
 
