@@ -6,7 +6,7 @@ const client = new BedrockRuntimeClient({
   credentials: process.env.AWS_PROFILE ? fromIni({ profile: process.env.AWS_PROFILE }) : undefined, // falls back to default chain (works on Render with IAM)
 });
 
-const MODEL_ID = 'us.anthropic.claude-sonnet-4-6-v1';
+const MODEL_ID = 'us.anthropic.claude-sonnet-4-6';
 
 interface ClaudeImageContent {
   type: 'image';
