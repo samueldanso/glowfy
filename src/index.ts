@@ -31,7 +31,7 @@ function createFacilitator() {
 
   if (apiKey && secretKey && passphrase) {
     console.log('[glowfy] Using OKXFacilitatorClient (SA keys present)');
-    return new OKXFacilitatorClient({ apiKey, secretKey, passphrase });
+    return new OKXFacilitatorClient({ apiKey, secretKey, passphrase, syncSettle: true });
   }
 
   console.warn('[glowfy] OKX SA keys not set — using local stub (402 only, no settlement)');
