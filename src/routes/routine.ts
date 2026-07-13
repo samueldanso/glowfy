@@ -315,7 +315,7 @@ routineRoutes.post('/build', async (c) => {
 
   let rawResponse: string;
   try {
-    rawResponse = await invokeClaude(prompt);
+    rawResponse = await invokeClaude(prompt, undefined, 4096);
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return c.json({ error: 'AI routine generation failed', detail: message }, 500);

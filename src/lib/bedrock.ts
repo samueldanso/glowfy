@@ -33,7 +33,11 @@ interface ClaudeResponseBody {
   content: { text: string }[];
 }
 
-export async function invokeClaude(prompt: string, imageUrl?: string): Promise<string> {
+export async function invokeClaude(
+  prompt: string,
+  imageUrl?: string,
+  maxTokens: number = 4096,
+): Promise<string> {
   const content: ClaudeContent[] = [];
 
   if (imageUrl) {
@@ -60,7 +64,7 @@ export async function invokeClaude(prompt: string, imageUrl?: string): Promise<s
     accept: 'application/json',
     body: JSON.stringify({
       anthropic_version: 'bedrock-2023-05-31',
-      max_tokens: 2048,
+      max_tokens: maxTokens,
       messages,
     }),
   });
