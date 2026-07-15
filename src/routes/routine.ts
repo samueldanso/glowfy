@@ -143,52 +143,12 @@ function buildRoutinePrompt(input: RoutineBuildInput): string {
   sections.push(ingredientContext);
 
   sections.push(`\n## Instructions:
-Build a complete routine with:
-1. Morning routine (ordered steps with product types and timing)
-2. Evening routine (ordered steps)
-3. Weekly additions (masks, exfoliants)
-4. A 30-day compliance plan (gradual product introduction to avoid irritation)
+Build AM/PM routine + 4-week compliance plan. Use ONLY ingredients from the database above.
+Order: thinnest→thickest. Morning ends with SPF. Evening allows retinol/AHAs.
+Keep "why" fields under 15 words. Be specific, not generic.
 
-Rules:
-- Reference REAL ingredients from the database above
-- Each step must specify: product type, WHY it addresses the concern, ingredients to seek, ingredients to avoid
-- Order matters (thinnest to thickest, actives before moisturizer)
-- Morning MUST include SPF as final step
-- Evening can include stronger actives (retinol, AHAs)
-- Compliance plan introduces products gradually (1 new product per week)
-- Be specific and actionable — not generic advice
-
-Return as JSON with this exact structure (no markdown, no code blocks, just raw JSON):
-{
-  "morning_routine": [
-    {
-      "order": 1,
-      "step": "step name",
-      "product_type": "specific product type",
-      "why": "explanation of why this step addresses their concerns",
-      "ingredients_to_seek": ["INGREDIENT 1", "INGREDIENT 2"],
-      "ingredients_to_avoid": ["INGREDIENT X"],
-      "duration": "time in seconds or minutes"
-    }
-  ],
-  "evening_routine": [...],
-  "weekly_additions": [
-    {"step": "treatment name", "frequency": "Nx/week", "why": "reason"}
-  ],
-  "compliance_plan": {
-    "week_1": "Start with basics only...",
-    "week_2": "Add one active...",
-    "week_3": "Add second active...",
-    "week_4": "Full routine...",
-    "tracking": ["tracking method 1", "tracking method 2"]
-  },
-  "total_steps_morning": 5,
-  "total_steps_evening": 6,
-  "estimated_time_morning": "X minutes",
-  "estimated_time_evening": "Y minutes"
-}
-
-Return ONLY valid JSON.`);
+Return ONLY raw JSON (no markdown):
+{"morning_routine":[{"order":1,"step":"name","product_type":"type","why":"short reason","ingredients_to_seek":["X"],"ingredients_to_avoid":["Y"],"duration":"30s"}],"evening_routine":[...],"weekly_additions":[{"step":"name","frequency":"2x/week","why":"reason"}],"compliance_plan":{"week_1":"basics only","week_2":"+1 active","week_3":"+1 active","week_4":"full routine","tracking":["method"]},"total_steps_morning":5,"total_steps_evening":6,"estimated_time_morning":"X min","estimated_time_evening":"Y min"}`);
 
   return sections.join('\n');
 }
@@ -315,7 +275,7 @@ routineRoutes.post('/build', async (c) => {
 
   let rawResponse: string;
   try {
-    rawResponse = await invokeClaude(prompt, undefined, 2048, true);
+    rawResponse = await invokeClaude(prompt, undefined, 1500, true);
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return c.json({ error: 'AI routine generation failed', detail: message }, 500);

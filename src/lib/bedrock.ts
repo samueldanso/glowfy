@@ -1,13 +1,19 @@
 import { BedrockRuntimeClient, InvokeModelCommand } from '@aws-sdk/client-bedrock-runtime';
 import { fromIni } from '@aws-sdk/credential-providers';
+import { NodeHttpHandler } from '@smithy/node-http-handler';
 
 const client = new BedrockRuntimeClient({
   region: process.env.AWS_REGION || 'us-east-1',
-  credentials: process.env.AWS_PROFILE ? fromIni({ profile: process.env.AWS_PROFILE }) : undefined, // falls back to default chain (works on Render with IAM)
+  credentials: process.env.AWS_PROFILE ? fromIni({ profile: process.env.AWS_PROFILE }) : undefined,
+  requestHandler: new NodeHttpHandler({
+    connectionTimeout: 10000,
+    socketTimeout: 60000,
+  }),
+  maxAttempts: 3,
 });
 
 const MODEL_ID = 'us.anthropic.claude-sonnet-4-6';
-const FAST_MODEL_ID = 'us.anthropic.claude-3-5-haiku-20241022-v1:0';
+const FAST_MODEL_ID = 'us.anthropic.claude-haiku-4-5-20251001-v1:0';
 
 interface ClaudeImageContent {
   type: 'image';

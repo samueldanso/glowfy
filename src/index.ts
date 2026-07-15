@@ -121,6 +121,7 @@ app.route('/product', productRoutes);
 
 // Health check — not payment-gated
 app.get('/', (c) => c.json({ status: 'ok', agent: 'Glowfy', version: '1.0.0' }));
+app.get('/health', (c) => c.json({ status: 'ok' }));
 
 export default {
   port: Number(process.env.PORT ?? 3000),
