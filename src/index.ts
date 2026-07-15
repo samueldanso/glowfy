@@ -67,37 +67,42 @@ const routes: RoutesConfig = {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
     resource: `${BASE_URL}/skin/analyze`,
     description:
-      'Analyze skin from photo or text description — returns skin type + 10 concern scores',
+      'Analyze skin from a photo or text description. Returns skin type + 10 concern scores (0-100). Send: {"photo_url": "https://...", "description": "my skin feels oily..."} — at least one field required.',
     mimeType: 'application/json',
   },
   '/skin/quiz': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.03' },
     resource: `${BASE_URL}/skin/quiz`,
-    description: 'Lifestyle quiz → full skin profile (no photo needed)',
+    description:
+      'Lifestyle quiz that builds a full skin profile — no photo needed. Send: {"skin_concerns": ["oiliness", "acne", "dryness"]} (required array). Optional: age (number), gender, climate, lifestyle, current_routine, allergies (array), budget.',
     mimeType: 'application/json',
   },
   '/routine/build': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
     resource: `${BASE_URL}/routine/build`,
-    description: 'Generate complete AM/PM skincare routine with 30-day compliance plan',
+    description:
+      'Generates a complete AM/PM skincare routine with a 30-day compliance plan. Send: {"skin_profile": {"skin_type": "oily", "top_concerns": ["acne", "dehydration"]}} (both fields required). Optional: budget, goals (array), time_available.',
     mimeType: 'application/json',
   },
   '/ingredients/recommend': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/ingredients/recommend`,
-    description: 'Personalized ingredient recommendations based on skin profile',
+    description:
+      'Recommends ingredients to seek and avoid based on your skin profile. Send: {"skin_profile": {"skin_type": "oily", "top_concerns": ["acne", "dryness"]}} — both fields required. Optional: concerns array with name+score objects.',
     mimeType: 'application/json',
   },
   '/ingredients/check': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/ingredients/check`,
-    description: 'Score ingredient list for safety, comedogenicity, and irritation',
+    description:
+      'Checks a list of ingredients for safety, comedogenicity, and irritation scores. Send: {"ingredients": ["niacinamide", "salicylic acid", "glycerin"]} — array of ingredient names (required).',
     mimeType: 'application/json',
   },
   '/product/match': {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.02' },
     resource: `${BASE_URL}/product/match`,
-    description: 'Score product compatibility with your skin profile',
+    description:
+      'Scores how well a product matches your skin. Send: {"product_name": "Product X", "ingredients": ["niacinamide", ...], "skin_profile": {"skin_type": "oily", "top_concerns": ["acne"]}} — all three fields required.',
     mimeType: 'application/json',
   },
 };
