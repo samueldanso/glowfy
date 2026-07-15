@@ -7,6 +7,7 @@ const client = new BedrockRuntimeClient({
 });
 
 const MODEL_ID = 'us.anthropic.claude-sonnet-4-6';
+const FAST_MODEL_ID = 'us.anthropic.claude-3-5-haiku-20241022-v1:0';
 
 interface ClaudeImageContent {
   type: 'image';
@@ -37,6 +38,7 @@ export async function invokeClaude(
   prompt: string,
   imageUrl?: string,
   maxTokens: number = 4096,
+  useFastModel: boolean = false,
 ): Promise<string> {
   const content: ClaudeContent[] = [];
 
@@ -59,7 +61,7 @@ export async function invokeClaude(
   const messages: ClaudeMessage[] = [{ role: 'user', content }];
 
   const command = new InvokeModelCommand({
-    modelId: MODEL_ID,
+    modelId: useFastModel ? FAST_MODEL_ID : MODEL_ID,
     contentType: 'application/json',
     accept: 'application/json',
     body: JSON.stringify({
