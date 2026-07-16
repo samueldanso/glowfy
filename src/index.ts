@@ -67,7 +67,7 @@ const routes: RoutesConfig = {
     accepts: { scheme: 'exact', network: 'eip155:196', payTo: WALLET, price: '$0.05' },
     resource: `${BASE_URL}/skin/analyze`,
     description:
-      'Analyze skin from a photo or text description. Returns skin type + 10 concern scores (0-100). Send: {"photo_url": "https://...", "description": "my skin feels oily..."} — at least one field required.',
+      'Analyze skin from a photo or text description. Returns skin type + 10 concern scores (0-100). Send: {"photo_url": "https://i.imgur.com/abc.jpg", "description": "my skin feels oily..."} — at least one field required. photo_url must be a direct image link (jpeg/png/webp), not an HTML page.',
     mimeType: 'application/json',
   },
   '/skin/quiz': {

@@ -56,7 +56,7 @@ ingredientRoutes.post('/check', async (c) => {
       result.overall,
       ingredientNames.length,
     );
-    summary = await invokeClaude(summaryPrompt);
+    summary = await invokeClaude(summaryPrompt, undefined, 1024, true);
   } catch {
     // Fallback summary if Bedrock fails
     summary = buildFallbackSummary(
@@ -121,20 +121,26 @@ ingredientRoutes.post('/recommend', async (c) => {
 
   if (!body.skin_profile) {
     return c.json(
-      { error: 'Missing "skin_profile" object. Provide skinType, concerns, and topConcerns.' },
+      { error: 'Missing "skin_profile" object. Provide skin_type and top_concerns.' },
       400,
     );
   }
 
-  const profile = body.skin_profile as SkinProfile;
+  const raw = body.skin_profile as Record<string, unknown>;
+  const profile: SkinProfile = {
+    skinType: (raw.skin_type || raw.skinType) as SkinProfile['skinType'],
+    topConcerns: (raw.top_concerns || raw.topConcerns) as string[],
+    concerns: (raw.concerns || []) as { name: string; score: number }[],
+    confidence: (raw.confidence || 0.8) as number,
+  };
 
   // Validate required fields
   const validSkinTypes = ['oily', 'dry', 'combination', 'normal', 'sensitive'];
   if (!profile.skinType || !validSkinTypes.includes(profile.skinType)) {
-    return c.json({ error: `Invalid skinType. Must be one of: ${validSkinTypes.join(', ')}` }, 400);
+    return c.json({ error: `Invalid skin_type. Must be one of: ${validSkinTypes.join(', ')}` }, 400);
   }
   if (!Array.isArray(profile.topConcerns) || profile.topConcerns.length === 0) {
-    return c.json({ error: 'topConcerns must be a non-empty array of strings.' }, 400);
+    return c.json({ error: 'top_concerns must be a non-empty array of strings.' }, 400);
   }
 
   // Gather relevant ingredients from our database as grounding context
@@ -145,7 +151,7 @@ ingredientRoutes.post('/recommend', async (c) => {
 
   let response: RecommendResponse;
   try {
-    const raw = await invokeClaude(prompt);
+    const raw = await invokeClaude(prompt, undefined, 2048, true);
     response = parseRecommendResponse(raw, profile);
   } catch {
     return c.json({ error: 'Failed to generate recommendations. Please try again.' }, 500);
