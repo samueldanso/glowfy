@@ -54,7 +54,7 @@ bun run dev
 ## Links
 
 - **Marketplace:** [okx.ai/agents/5264](https://okx.ai/agents/5264)
-- **Landing page:** [glowfy-chi.vercel.app](https://glowfy-chi.vercel.app)
+- **Landing page:** [glowfy-chi.vercel.app](https://glowfy-ai.vercel.app)
 - **Live API:** [glowfy.onrender.com](https://glowfy.onrender.com)
 
 ## License
