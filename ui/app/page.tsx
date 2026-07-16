@@ -11,8 +11,8 @@ export default function Home() {
             <Image
               src="/logo.jpg"
               alt="Glowfy"
-              width={42}
-              height={42}
+              width={36}
+              height={36}
               className="logo-img"
               priority
             />
@@ -21,20 +21,18 @@ export default function Home() {
 
           {/* Headline */}
           <h1>
-            The AI Skin Coach.
+            Your AI Skin Coach.
             <br />
             <em>Scan. Score. Glow.</em>
           </h1>
 
           {/* Sub */}
           <p className="sub">
-            Database-backed skincare intelligence — no subscriptions,
-            no login, no guessing.
-            <br />
-            Six tools. Photo or text in. Expert analysis out. Pay per call.
+            Six skincare tools powered by dermatological research and 1,900+ real
+            products. Photo or text in. Expert analysis out. Pay per call.
           </p>
 
-          {/* Interactive endpoint explorer */}
+          {/* Agent connection card */}
           <EndpointFrame />
         </section>
       </main>
@@ -49,8 +47,6 @@ export default function Home() {
         >
           Available on OKX.AI
         </a>
-        <span>·</span>
-        <span>Lifestyle Companion</span>
       </footer>
     </div>
   );
