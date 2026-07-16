@@ -1,65 +1,62 @@
 # Glowfy
 
-> Scan. Score. Glow.
+Your AI Skin Coach — database-backed skincare intelligence, pay per call.
 
-AI Skin Coach — an always-on A2MCP agent on [OKX.AI](https://okx.ai) that delivers skincare intelligence via x402-gated endpoints. Six tools: analyze skin via selfie or quiz, build AM/PM routines, check ingredient safety, match products to your profile.
+Glowfy is an A2MCP agent on [OKX.AI](https://okx.ai/agents/5264) that analyzes skin, builds routines, checks ingredient safety, and matches products to your profile. Powered by published dermatological research (Fulton 1989, EWG Skin Deep, CIR safety assessments) and 1,900+ real products from Open Beauty Facts.
 
-Database-backed scoring from published dermatological research (Fulton 1989, EWG Skin Deep, CIR safety assessments) and 1900+ real products from Open Beauty Facts. No hallucinated data.
+## Why Glowfy
 
-**Agent ID:** 5264 · **Category:** Lifestyle Companion · **Network:** X Layer
+1. **Research-backed scoring** — ingredient safety from published studies, not LLM guessing.
+2. **Real product data** — 1,900+ products from Open Beauty Facts with full ingredient lists.
+3. **Six focused tools** — each does one thing well, structured JSON output agents can use directly.
+4. **X Layer native** — payment in USDT0, settlement on-chain via x402 protocol.
 
 ## Endpoints
 
 | Endpoint | What it does | Price |
 |---|---|---|
-| `/skin/analyze` | Photo or text → skin type + 10 concern scores (0–100) | $0.05 |
-| `/skin/quiz` | Lifestyle quiz → full skin profile (no photo needed) | $0.03 |
-| `/routine/build` | Skin profile → AM/PM routine + 30-day compliance plan | $0.05 |
-| `/ingredients/check` | Ingredient list → per-ingredient safety scores + rating | $0.02 |
-| `/ingredients/recommend` | Skin profile → top ingredients to seek + avoid | $0.02 |
-| `/product/match` | Product + skin profile → compatibility score + verdict | $0.02 |
-
-## How it works
-
-1. Agent calls an endpoint → gets HTTP 402 + payment challenge
-2. Agent signs payment via OKX Agent Payments Protocol (x402, USDT0 on X Layer)
-3. Request replays with payment → endpoint returns structured JSON result
-4. Settlement confirms on-chain via `transferWithAuthorization` (EIP-3009)
-
-No login. No session state. No UI. One call, one result, one payment.
+| `POST /skin/analyze` | Photo or text → skin type + 10 concern scores (0–100) | $0.05 |
+| `POST /skin/quiz` | Lifestyle quiz → full skin profile (no photo needed) | $0.03 |
+| `POST /routine/build` | Skin profile → AM/PM routine + 30-day compliance plan | $0.05 |
+| `POST /ingredients/check` | Ingredient list → per-ingredient safety scores + rating | $0.02 |
+| `POST /ingredients/recommend` | Skin profile → top ingredients to seek + avoid | $0.02 |
+| `POST /product/match` | Product + skin profile → compatibility score + verdict | $0.02 |
 
 ## Stack
 
-- **Runtime:** Bun + Hono
-- **Payment:** `@okxweb3/x402-hono` (OKX Payment SDK)
-- **AI:** Claude Sonnet 4.6 on AWS Bedrock (vision + text)
-- **Data:** SQLite (Open Beauty Facts) + embedded ingredient scoring (199 ingredients)
-- **Settlement:** X Layer `eip155:196`, USDT0
-- **Deploy:** Render (Singapore)
+| Layer | Tech |
+|---|---|
+| Runtime | Bun + Hono |
+| Payment | x402 protocol — USDT0 on X Layer (`eip155:196`) |
+| AI | Claude Sonnet 4.6 on AWS Bedrock (vision + text) |
+| Data | SQLite (Open Beauty Facts) + 199 scored ingredients |
+| Deploy | Render |
 
-## Development
+## How it works
 
-```bash
-bun install          # install deps
-bun run dev          # hot-reload dev server on :3000
-bun run test         # vitest (45 tests)
-bun run check        # biome lint + format
-bun run typecheck    # tsc --noEmit
+```
+Photo/text → Claude vision analyzes skin → concern scores generated
+                                                    ↓
+Skin profile → routine built from ingredient database
+                                                    ↓
+Product ingredients → scored against safety research
+                                                    ↓
+Structured JSON returned to calling agent
 ```
 
-## Self-check
+## Quick Start
 
 ```bash
-curl -i -X GET https://glowfy.onrender.com/skin/analyze
-# Must return HTTP 402 + PAYMENT-REQUIRED header
-
-curl -i -X POST https://glowfy.onrender.com/skin/analyze
-# Must return HTTP 402 + PAYMENT-REQUIRED header
-
-curl https://glowfy.onrender.com/
-# {"status":"ok","agent":"Glowfy","version":"1.0.0"}
+bun install
+bun run dev
 ```
+
+## Links
+
+- **Marketplace:** [okx.ai/agents/5264](https://okx.ai/agents/5264)
+- **Landing page:** [glowfy-chi.vercel.app](https://glowfy-chi.vercel.app)
+- **Live API:** [glowfy.onrender.com](https://glowfy.onrender.com)
 
 ## License
 
-Proprietary. Built for OKX.AI Genesis Hackathon 2026.
+MIT
