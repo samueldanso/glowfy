@@ -47,6 +47,22 @@ export default function Home() {
         >
           Available on OKX.AI
         </a>
+        <span>·</span>
+        <a
+          href="https://github.com/samueldanso/glowfy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <span>·</span>
+        <a
+          href="https://x.com/glowfy_ai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @glowfy_ai
+        </a>
       </footer>
     </div>
   );
