@@ -9,7 +9,7 @@
   --ink:          #FAF7F2;
   --ink-soft:     rgba(250, 247, 242, 0.6);
   --ink-faint:    rgba(250, 247, 242, 0.32);
-  --paper:        #0d0b09;
+  --paper:        #131209;
   --gold:         #F2C078;
   --gold-dim:     rgba(242, 192, 120, 0.6);
   --gold-muted:   rgba(242, 192, 120, 0.1);
@@ -33,11 +33,7 @@ body {
   overscroll-behavior: none;
   font-family: var(--font-geist), system-ui, sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(ellipse 130% 65% at 50% 108%, rgba(242, 192, 120, 0.2) 0%, transparent 52%),
-    radial-gradient(ellipse 55% 32% at 88% 4%,  rgba(210, 160, 90, 0.06) 0%, transparent 48%),
-    radial-gradient(ellipse 70% 40% at 8% 90%,  rgba(180, 120, 60, 0.04) 0%, transparent 45%),
-    #0d0b09;
+  background: #131209;
 }
 
 body::after {
@@ -109,7 +105,10 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.02em;
   text-wrap: balance;
-  color: var(--ink);
+  background: linear-gradient(to right, #FFFFFF, #9B9B9B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h1 em {
@@ -135,7 +134,7 @@ h1 em {
   background: var(--card-bg);
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 24px rgba(19, 18, 9, 0.5);
   overflow: hidden;
   text-align: left;
 }
