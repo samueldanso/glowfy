@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Copy } from "lucide-react";
+import { Copy, Check } from "@phosphor-icons/react";
 import { useState } from "react";
 
 const AGENTS = [
@@ -138,7 +138,7 @@ export function EndpointFrame() {
             title={copied ? "Copied" : "Copy"}
             aria-label={copied ? "Copied" : "Copy prompt"}
           >
-            {copied ? <Check size={12} /> : <Copy size={12} />}
+            {copied ? <Check size={14} weight="bold" /> : <Copy size={14} weight="regular" />}
             {copied ? "Copied" : "Copy"}
           </button>
           <pre>

@@ -90,7 +90,8 @@ main {
 }
 
 .logo-name {
-  font-size: 0.92rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--gold-dim);
@@ -118,8 +119,8 @@ h1 em {
 }
 
 .sub {
-  font-size: clamp(0.95rem, 1.8vw, 1.12rem);
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: var(--ink-soft);
   max-width: 34rem;
   text-wrap: balance;
@@ -156,7 +157,8 @@ h1 em {
   display: inline-flex;
   align-items: center;
   font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   padding: 8px 12px;
   border: 1px solid var(--card-border);
   border-radius: 8px;
@@ -196,7 +198,7 @@ h1 em {
 }
 
 .frame-tab.service {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   padding: 4px 8px;
   border-color: transparent;
   color: var(--ink-faint);
@@ -226,7 +228,7 @@ h1 em {
 
 .panel-output pre {
   font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: clamp(0.72rem, 1.5vw, 0.82rem);
+  font-size: 0.75rem;
   line-height: 1.7;
   color: var(--ink-soft);
   overflow-x: auto;
@@ -244,7 +246,7 @@ h1 em {
   align-items: center;
   gap: 0.35rem;
   font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   padding: 4px 8px;
   border: 1px solid var(--card-border);
   border-radius: 6px;
@@ -265,7 +267,7 @@ footer {
   align-items: center;
   gap: 8px;
   padding: 12px;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   color: var(--ink-faint);
   font-family: var(--font-mono), ui-monospace, monospace;
   letter-spacing: 0.01em;
