@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const garamond = EB_Garamond({
-  variable: "--font-garamond",
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -39,15 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body className={`${garamond.variable} ${mono.variable}`}>{children}</body>
+      <body className={`${geist.variable} ${mono.variable}`}>{children}</body>
     </html>
   );
 }
