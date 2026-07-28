@@ -163,13 +163,14 @@ h1 em {
   background: none;
   color: var(--ink-faint);
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  transition: all 0.7s cubic-bezier(0.32, 0.72, 0, 1);
   flex: none;
   white-space: nowrap;
 }
 .frame-tab:hover {
   color: var(--ink-soft);
   border-color: rgba(250, 247, 242, 0.18);
+  transform: translateY(-1px);
 }
 .frame-tab.active {
   color: var(--ink);
@@ -179,7 +180,13 @@ h1 em {
 .frame-tab:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .frame-tab { transition: none; }
+  .frame-tab,
+  .copy-btn,
+  footer a,
+  .hero > * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 /* ── Service row (second tab bar) ─────────────────────────────── */
@@ -244,7 +251,7 @@ h1 em {
   background: none;
   color: var(--ink-faint);
   cursor: pointer;
-  transition: color 0.12s, border-color 0.12s;
+  transition: all 0.7s cubic-bezier(0.32, 0.72, 0, 1);
   z-index: 1;
 }
 .copy-btn:hover { color: var(--ink-soft); border-color: rgba(250, 247, 242, 0.18); }
@@ -269,9 +276,32 @@ footer a {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: var(--gold-border);
-  transition: color 0.15s;
+  transition: color 0.7s cubic-bezier(0.32, 0.72, 0, 1);
 }
 footer a:hover { color: var(--gold-dim); }
+
+/* ── Entry animations ────────────────────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero > * {
+  animation: fade-up 0.8s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+.hero > :nth-child(1) { animation-delay: 0ms; }
+.hero > :nth-child(2) { animation-delay: 80ms; }
+.hero > :nth-child(3) { animation-delay: 160ms; }
+.hero > :nth-child(4) { animation-delay: 240ms; }
 
 /* ── Mobile ──────────────────────────────────────────────────── */
 @media (max-width: 640px) {
