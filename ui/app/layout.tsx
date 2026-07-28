@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     title: "Glowfy — AI Skin Coach",
     description: "Scan. Score. Glow. The AI skincare agent on OKX.AI.",
     siteName: "Glowfy",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

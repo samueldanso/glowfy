@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="page">
-      <main>
+      <a href="#main" className="skip-link">Skip to content</a>
+      <main id="main">
         <section className="hero">
           {/* Logo + wordmark */}
           <div className="logo-wrap">
